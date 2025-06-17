@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mD:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\src\main\scala\app\Main.scala:31:19: not found: value actualView[0m
+[0m[[0m[31merror[0m] [0m[0m        child <-- actualView[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
