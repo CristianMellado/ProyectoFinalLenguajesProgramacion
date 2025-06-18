@@ -39,29 +39,62 @@ object RegistroView {
         label("Nombre:"),
         input(
           typ := "text",
-          onInput.mapToValue --> nombreVar.writer
+          onInput.mapToValue --> nombreVar.writer,
+          styleAttr := 
+            """width: 250px;
+              |padding: 10px;
+              |font-size: 16px;
+              |border: 1px solid #ccc;
+              |border-radius: 5px;
+              |margin-bottom: 10px;
+            """.stripMargin
         ),
 
         label("DNI:"),
         input(
           typ := "text",
-          onInput.mapToValue --> dniVar.writer
+          onInput.mapToValue --> dniVar.writer,
+          styleAttr := 
+            """width: 250px;
+              |padding: 10px;
+              |font-size: 16px;
+              |border: 1px solid #ccc;
+              |border-radius: 5px;
+              |margin-bottom: 10px;
+            """.stripMargin
         ),
 
         label("Correo:"),
         input(
           typ := "email",
-          onInput.mapToValue --> correoVar.writer
+          onInput.mapToValue --> correoVar.writer,
+          styleAttr := 
+            """width: 250px;
+              |padding: 10px;
+              |font-size: 16px;
+              |border: 1px solid #ccc;
+              |border-radius: 5px;
+              |margin-bottom: 10px;
+            """.stripMargin
         ),
 
         label("Contraseña:"),
         input(
           typ := "password",
-          onInput.mapToValue --> contrasenaVar.writer
+          onInput.mapToValue --> contrasenaVar.writer,
+          styleAttr := 
+            """width: 250px;
+              |padding: 10px;
+              |font-size: 16px;
+              |border: 1px solid #ccc;
+              |border-radius: 5px;
+              |margin-bottom: 10px;
+            """.stripMargin
         ),
 
         button(
           "Confirmar Registro",
+          styleAttr := s"background-color: ${Estilos.colorPrimario}; color: white; border: none; padding: 10px; border-radius: 6px;",
           onClick --> { _ =>
             println(s"Nombre: ${nombreVar.now()}")
             println(s"DNI: ${dniVar.now()}")
@@ -73,7 +106,7 @@ object RegistroView {
 
         button(
           "Volver a Inicio",
-          styleAttr := s"background-color: ${Estilos.colorPrimario}; color: white; border: none; padding: 10px; border-radius: 6px;",
+          styleAttr := s"background-color: #95a5a6; color: white; border: none; padding: 10px; border-radius: 6px;",
           onClick --> { _ =>
             currentView.set(PaginaPrincipal(currentView, librosVar))
           }

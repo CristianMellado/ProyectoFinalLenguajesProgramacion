@@ -19,10 +19,35 @@ object PaginaPrincipal {
   def apply(currentView: Var[HtmlElement], librosVar: Var[List[Libro]]): HtmlElement = {
     div(
       div(
-        styleAttr := "display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f5f5f5;",
-        button("☰", onClick --> (_ => currentView.set(FiltroView(currentView, librosVar)))),
+        styleAttr := """
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 20px;
+          background-color: #3498db;           /* azul moderno */
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          color: white;
+        """,
+        button("☰", 
+        styleAttr := """
+          background: transparent;
+          border: none;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+        """,
+        onClick --> (_ => currentView.set(FiltroView(currentView, librosVar)))),
         button(
           "👤",
+          styleAttr := """
+            background: #2980b9;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+          """,
           onClick --> { _ =>
             currentView.set(LoginView(currentView, librosVar))
           }
