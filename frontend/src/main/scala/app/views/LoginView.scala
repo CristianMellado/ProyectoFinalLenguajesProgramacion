@@ -17,25 +17,56 @@ object LoginView {
     val usuarioVar = Var("")
     val contrasenaVar = Var("")
 
+    // Objeto para guardar los datos de la persona logueada
+    val personaVar = Var[Option[js.Dynamic]](None)
+
+    // Función para hacer logout
+    def logout(): Unit = {
+      dom.window.localStorage.removeItem("rol")
+      dom.window.localStorage.removeItem("id_persona")
+      dom.window.localStorage.removeItem("email")
+      dom.window.localStorage.removeItem("persona")
+      personaVar.set(None)
+      currentView.set(LoginView(currentView, librosVar))
+    }
+
     // Función para hacer login
     def login(): Unit = {
       val correo = usuarioVar.now()
       val contrasena = contrasenaVar.now()
 
       if (correo == "admin" && contrasena == "123") {
+        val persona = js.Dynamic.literal(
+          rol = "admin",
+          id_persona = 999,
+          email = correo
+        )
         dom.window.localStorage.setItem("rol", "admin")
         dom.window.localStorage.setItem("id_persona", "999")
         dom.window.localStorage.setItem("email", correo)
+        dom.window.localStorage.setItem("persona", JSON.stringify(persona))
+        personaVar.set(Some(persona))
         currentView.set(AdminView(currentView, librosVar))
+      } else if (correo == "user" && contrasena == "123") {
+        val persona = js.Dynamic.literal(
+          rol = "cliente",
+          id_persona = 111,
+          email = correo
+        )
+        dom.window.localStorage.setItem("rol", "cliente")
+        dom.window.localStorage.setItem("id_persona", "111")
+        dom.window.localStorage.setItem("email", correo)
+        dom.window.localStorage.setItem("persona", JSON.stringify(persona))
+        personaVar.set(Some(persona))
+        currentView.set(ClientView(currentView, librosVar, personaVar, logout))
       } else {
-        // Solo si NO es admin, intentamos simular el login al backend
         val data = js.Dynamic.literal(
           correo = correo,
           contrasena = contrasena
         )
         Ajax
           .post(
-            url = "/ruta/login", // cuando tengas backend, ajusta la ruta
+            url = "https://99z5gqlq-8081.brs.devtunnels.ms/login/login",
             data = JSON.stringify(data),
             headers = Map("Content-Type" -> "application/json")
           )
@@ -46,14 +77,18 @@ object LoginView {
               val idPersona = response.id_persona.toString
               val email = response.email.toString
 
+              // Guardar todos los datos de la persona
               dom.window.localStorage.setItem("rol", rol)
               dom.window.localStorage.setItem("id_persona", idPersona)
               dom.window.localStorage.setItem("email", email)
+              dom.window.localStorage.setItem("persona", xhr.responseText)
+              personaVar.set(Some(response))
 
               if (rol == "admin") {
                 currentView.set(AdminView(currentView, librosVar))
               } else {
-                currentView.set(PaginaPrincipal(currentView, librosVar))
+                // Cliente: ir a ClientView
+                currentView.set(ClientView(currentView, librosVar, personaVar, logout))
               }
             } else {
               dom.window.alert("Error en login: " + xhr.status)
@@ -73,7 +108,6 @@ object LoginView {
         height: 100vh;
         background-color: #f9f9f9;
       """,
-
       div(
         styleAttr := """
           padding: 30px;
@@ -85,11 +119,9 @@ object LoginView {
           flex-direction: column;
           gap: 15px;
         """,
-
         h2("Iniciar Sesión", styleAttr := "text-align: center;"),
-
         input(
-          placeholder := "Correo",
+          placeholder := "Nombre de usuario",
           onInput.mapToValue --> usuarioVar.writer,
           styleAttr :=
             """width: 250px;
@@ -100,7 +132,6 @@ object LoginView {
               |margin-bottom: 10px;
             """.stripMargin
         ),
-
         input(
           typ := "password",
           placeholder := "Contraseña",
@@ -114,13 +145,11 @@ object LoginView {
               |margin-bottom: 10px;
             """.stripMargin
         ),
-
         button(
           "Iniciar Sesión",
           styleAttr := s"background-color: ${Estilos.colorPrimario}; color: white; border: none; padding: 10px; border-radius: 6px;",
           onClick --> { _ => login() }
         ),
-
         button(
           "Registrarse",
           styleAttr := s"background-color: ${Estilos.colorPrimario}; color: white; border: none; padding: 10px; border-radius: 6px;",
@@ -128,7 +157,6 @@ object LoginView {
             currentView.set(RegistroView(currentView, librosVar))
           }
         ),
-
         button(
           "Volver a inicio",
           styleAttr := "background-color: #95a5a6; color: white; border: none; padding: 10px; border-radius: 6px;",
