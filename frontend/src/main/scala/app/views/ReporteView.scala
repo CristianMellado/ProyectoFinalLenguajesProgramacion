@@ -32,26 +32,31 @@ object ReporteView {
       val mes = mesVar.now()
       val anio = anioVar.now()
 
-      Ajax.get(s"/ruta/reporte?mes=$mes&anio=$anio")
+      Ajax.get(s"https://99z5gqlq-8081.brs.devtunnels.ms/reportes/reporte?mes=$mes&anio=$anio")
         .map { xhr =>
-          val json = JSON.parse(xhr.responseText)
-          val data = json.reporte.asInstanceOf[js.Array[js.Dynamic]]
-          val total = json.total.toString.toDouble
+            if (xhr.status == 200) {
+                val json = JSON.parse(xhr.responseText)
+                val data = json.reporte.asInstanceOf[js.Array[js.Dynamic]]
+                val total = json.total.toString.toDouble
 
-          val compras = data.map { item =>
-            Compra(
-              nombreLibro = item.nombre_libro.toString,
-              categoria = item.categoria.toString,
-              nombrePersona = item.nombre_persona.toString,
-              dni = item.dni.toString,
-              correo = item.correo.toString,
-              precio = item.precio.toString.toDouble
-            )
-          }.toList
+                val compras = data.map { item =>
+                Compra(
+                    nombreLibro = item.nombre_libro.toString,
+                    categoria = item.categoria.toString,
+                    nombrePersona = item.nombre_persona.toString,
+                    dni = item.dni.toString,
+                    correo = item.correo.toString,
+                    precio = item.precio.toString.toDouble
+                )
+                }.toList
 
-          comprasVar.set(compras)
-          totalVar.set(total)
+                comprasVar.set(compras)
+                totalVar.set(total)
+            } else {
+                dom.window.alert("Error obteniendo reporte: " + xhr.status)
+            }
         }
+
         .recover { case ex =>
           dom.window.alert("Error al obtener reporte: " + ex.getMessage)
         }
@@ -94,7 +99,10 @@ object ReporteView {
             border-radius: 5px;
             cursor: pointer;
           """,
-          onClick --> { _ => buscarReporte() }
+          onClick --> { _ => buscarReporte() },
+          disabled <-- mesVar.signal.combineWith(anioVar.signal).map { case (m, a) =>
+            m.isEmpty || a.isEmpty
+          }
         )
       ),
 

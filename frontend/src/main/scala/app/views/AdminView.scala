@@ -58,7 +58,7 @@ object AdminView {
             cursor: pointer;
           """,
           onClick --> { _ =>
-            currentView.set(EliminarView(currentView, librosVar))
+            EliminarView(currentView, Var(List.empty[EliminarView.LibroCompleto]))
           }
         ),
 
