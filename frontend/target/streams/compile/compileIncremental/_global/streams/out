@@ -1,150 +1,46 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 37 products, 11 sources, 6 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 51 products, 14 sources, 6 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/frontend/src/main/scala/app/views/ClientView.scala, ${BASE}/frontend/src/main/scala/app/views/AdminView.scala, ${BASE}/frontend/src/main/scala/app/views/FiltroView.scala, ${BASE}/frontend/src/main/scala/app/views/ReporteView.scala, ${BASE}/frontend/src/main/scala/app/views/RegistroView.scala, ${BASE}/frontend/src/main/scala/app/views/Estilos.scala, ${BASE}/frontend/src/main/scala/app/views/ProductView.scala, ${BASE}/frontend/src/main/scala/app/views/AnadirAdminView.scala, ${BASE}/frontend/src/main/scala/app/views/LoginView.scala, ${BASE}/frontend/src/main/scala/app/views/CompraView.scala, ${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala, ${BASE}/frontend/src/main/scala/app/views/EliminarView.scala, ${BASE}/frontend/src/main/scala/app/Main.scala, ${BASE}/frontend/src/main/scala/app/views/AgregarView.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/frontend/src/main/scala/app/views/ClientView.scala, ${BASE}/frontend/src/main/scala/app/views/ProductView.scala, ${BASE}/frontend/src/main/scala/app/views/CompraView.scala), removed = Set(), changed = Set(${BASE}/frontend/src/main/scala/app/views/RegistroView.scala, ${BASE}/frontend/src/main/scala/app/Main.scala, ${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala, ${BASE}/frontend/src/main/scala/app/views/LoginView.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set(${BASE}/frontend/src/main/scala/app/views/ClientView.scala, ${BASE}/frontend/src/main/scala/app/views/ProductView.scala, ${BASE}/frontend/src/main/scala/app/views/CompraView.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/frontend/src/main/scala/app/views/RegistroView.scala, ${BASE}/frontend/src/main/scala/app/Main.scala, ${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala, ${BASE}/frontend/src/main/scala/app/views/LoginView.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(app.views.RegistroView, app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro, app.views.LoginView, app.Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(app.views.RegistroView, app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro, app.views.LoginView, app.Main)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/frontend/src/main/scala/app/views/ClientView.scala, ${BASE}/frontend/src/main/scala/app/views/RegistroView.scala, ${BASE}/frontend/src/main/scala/app/views/ProductView.scala, ${BASE}/frontend/src/main/scala/app/views/LoginView.scala, ${BASE}/frontend/src/main/scala/app/views/CompraView.scala, ${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala, ${BASE}/frontend/src/main/scala/app/Main.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.RegistroView, app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro, app.views.LoginView, app.Main[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/frontend/src/main/scala/app/views/PaginaPrincipal.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.13\scala2-sbt-bridge-2.13.13.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 45b54dd9 for Scala compiler version 2.13.13[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 7edf8447 for Scala compiler version 2.13.13[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.13\1.15.0\scalajs-compiler_2.13.13-1.15.0.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-library_2.13\1.15.0\scalajs-library_2.13-1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-scalalib_2.13\2.13.13%2B1.15.0\scalajs-scalalib_2.13-2.13.13%2B1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\laminar_sjs1_2.13\16.0.0\laminar_sjs1_2.13-16.0.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-javalib\1.15.0\scalajs-javalib-1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\airstream_sjs1_2.13\16.0.0\airstream_sjs1_2.13-16.0.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\ew_sjs1_2.13\0.1.2\ew_sjs1_2.13-0.1.2.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-dom_sjs1_2.13\2.6.0\scalajs-dom_sjs1_2.13-2.6.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\app\tulz\tuplez-full-light_sjs1_2.13\0.4.0\tuplez-full-light_sjs1_2.13-0.4.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 12.5342994 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 9.7612406 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from app.views.PaginaPrincipal.Libro...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.PaginaPrincipal.Libro[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(app.views.PaginaPrincipal.Libro)[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ClientView: [UsedName(nombre_categoria,[Default]), UsedName(Libro,[Default]), UsedName(apply,[Default]), UsedName(precio,[Default]), UsedName(nombreimagen,[Default]), UsedName(nombre,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ReporteView: [UsedName(apply,[Default]), UsedName(Libro,[Default]), UsedName(precio,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.RegistroView: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.AdminView: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.FiltroView: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ProductView: [UsedName(apply,[Default]), UsedName(nombre_categoria,[Default]), UsedName(precio,[Default]), UsedName(nombreimagen,[Default]), UsedName(nombre,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.AgregarView: [UsedName(apply,[Default]), UsedName(nombre,[Default]), UsedName(Libro,[Default]), UsedName(precio,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.LoginView: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.CompraView: [UsedName(id_libro,[Default]), UsedName(nombre_categoria,[Default]), UsedName(Libro,[Default]), UsedName(apply,[Default]), UsedName(precio,[Default]), UsedName(nombreimagen,[Default]), UsedName(nombre,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.EliminarView: [UsedName(apply,[Default]), UsedName(nombre,[Default]), UsedName(Libro,[Default]), UsedName(nombrepdf,[Default]), UsedName(nombreimagen,[Default]), UsedName(id_libro,[Default]), UsedName(id_categoria,[Default]), UsedName(precio,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.Main: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.AnadirAdminView: [UsedName(apply,[Default]), UsedName(Libro,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(app.views.PaginaPrincipal.Libro,ModifiedNames(changes = UsedName(nombre_categoria,[Default]), UsedName(apply,[Default]), UsedName(copy$default$3,[Default]), UsedName(app;views;PaginaPrincipal;Libro;init;,[Default]), UsedName(copy$default$1,[Default]), UsedName(nombre,[Default]), UsedName(Libro,[Default]), UsedName(titulo,[Default]), UsedName(copy,[Default]), UsedName(copy$default$4,[Default]), UsedName(nombrepdf,[Default]), UsedName(nombreimagen,[Default]), UsedName(id_libro,[Default]), UsedName(curried,[Default]), UsedName(copy$default$6,[Default]), UsedName(tupled,[Default]), UsedName(id_categoria,[Default]), UsedName(copy$default$7,[Default]), UsedName(precio,[Default]), UsedName(imagen,[Default]), UsedName(copy$default$5,[Default]), UsedName(unapply,[Default]))) invalidates 13 classes due to The app.views.PaginaPrincipal.Libro has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(nombre_categoria,[Default]), UsedName(apply,[Default]), UsedName(copy$default$3,[Default]), UsedName(app;views;PaginaPrincipal;Libro;init;,[Default]), UsedName(copy$default$1,[Default]), UsedName(nombre,[Default]), UsedName(Libro,[Default]), UsedName(titulo,[Default]), UsedName(copy,[Default]), UsedName(copy$default$4,[Default]), UsedName(nombrepdf,[Default]), UsedName(nombreimagen,[Default]), UsedName(id_libro,[Default]), UsedName(curried,[Default]), UsedName(copy$default$6,[Default]), UsedName(tupled,[Default]), UsedName(id_categoria,[Default]), UsedName(copy$default$7,[Default]), UsedName(precio,[Default]), UsedName(imagen,[Default]), UsedName(copy$default$5,[Default]), UsedName(unapply,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(app.views.PaginaPrincipal.Libro)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(app.views.ClientView, app.views.ReporteView, app.views.RegistroView, app.views.AdminView, app.views.FiltroView, app.views.ProductView, app.views.AgregarView, app.views.LoginView, app.views.CompraView, app.views.EliminarView, app.Main, app.views.AnadirAdminView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from app.views.ProductView...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.ProductView[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(app.views.ProductView)[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ClientView: [UsedName(ProductView,[Default]), UsedName(apply,[Default]), UsedName(==,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.CompraView: [UsedName(ProductView,[Default]), UsedName(apply,[Default]), UsedName(==,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(app.views.ProductView,ModifiedNames(changes = UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(ProductView,[Default]), UsedName(isInstanceOf,[Default]), UsedName(equals,[Default]))) invalidates 3 classes due to The app.views.ProductView has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(ProductView,[Default]), UsedName(isInstanceOf,[Default]), UsedName(equals,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(app.views.ProductView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(app.views.ClientView, app.views.CompraView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from app.views.CompraView...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.CompraView[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(app.views.CompraView)[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ProductView: [UsedName(apply,[Default]), UsedName(CompraView,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(app.views.CompraView,ModifiedNames(changes = UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(CompraView,[Default]))) invalidates 2 classes due to The app.views.CompraView has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(CompraView,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(app.views.CompraView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(app.views.ProductView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from app.views.ClientView...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.ClientView[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(app.views.ClientView)[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.ProductView: [UsedName(apply,[Default]), UsedName(ClientView,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of app.views.LoginView: [UsedName(apply,[Default]), UsedName(==,[Default]), UsedName(ClientView,[Default]), UsedName(toString,[Default]), UsedName(asInstanceOf,[Default])][0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(app.views.ClientView,ModifiedNames(changes = UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(ClientView,[Default]), UsedName(equals,[Default]))) invalidates 3 classes due to The app.views.ClientView has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]), UsedName(apply,[Default]), UsedName(wait,[Default]), UsedName(notifyAll,[Default]), UsedName(hashCode,[Default]), UsedName(notify,[Default]), UsedName(asInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(toString,[Default]), UsedName(eq,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(ne,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(ClientView,[Default]), UsedName(equals,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(app.views.ClientView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(app.views.ProductView, app.views.LoginView)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from app.views.PaginaPrincipal...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.PaginaPrincipal[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(app.views.PaginaPrincipal)[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.ClientView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.ReporteView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.RegistroView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.AdminView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.FiltroView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.ProductView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.AgregarView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.LoginView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.CompraView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.EliminarView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.Main. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of app.views.AnadirAdminView. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(app.views.PaginaPrincipal,ModifiedNames(changes = UsedName(librosIniciales,[Default]))) invalidates 1 classes due to The app.views.PaginaPrincipal has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(librosIniciales,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(app.views.PaginaPrincipal)[0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m  > [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.ReporteView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.RegistroView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.AdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.FiltroView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.AgregarView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.LoginView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.EliminarView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.Main[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.AnadirAdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.ReporteView, app.views.RegistroView, app.views.AdminView, app.views.FiltroView, app.views.AgregarView, app.views.LoginView, app.views.EliminarView, app.Main, app.views.AnadirAdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AdminView by app.views.ReporteView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AgregarView by app.views.AdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.LoginView by app.views.AdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.RegistroView by app.views.LoginView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.Main by app.views.RegistroView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.PaginaPrincipal by app.views.LoginView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.ClientView by app.views.PaginaPrincipal[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.ProductView by app.views.ClientView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.CompraView by app.views.ProductView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.FiltroView by app.views.PaginaPrincipal[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.EliminarView by app.views.PaginaPrincipal[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AnadirAdminView by app.views.PaginaPrincipal[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.ClientView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.ProductView[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.PaginaPrincipal[0m
-[0m[[0m[0mdebug[0m] [0m[0m	app.views.CompraView[0m
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set(app.views.ClientView, app.views.ReporteView, app.views.RegistroView, app.views.AdminView, app.views.FiltroView, app.views.ProductView, app.views.PaginaPrincipal, app.views.AgregarView, app.views.LoginView, app.views.CompraView, app.views.EliminarView, app.Main, app.views.AnadirAdminView)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.ClientView, app.views.RegistroView, app.views.ProductView, app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro, app.views.LoginView, app.views.CompraView, app.Main[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.ClientView by app.views.PaginaPrincipal[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.ProductView by app.views.ClientView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.CompraView by app.views.ProductView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.LoginView by app.views.ClientView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.RegistroView by app.views.LoginView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.Main by app.views.RegistroView[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.PaginaPrincipal by app.views.LoginView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.ReporteView by app.views.PaginaPrincipal[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AdminView by app.views.ReporteView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AgregarView by app.views.AdminView[0m
@@ -152,15 +48,4 @@
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.AnadirAdminView by app.views.AdminView[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding app.views.FiltroView by app.views.PaginaPrincipal[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated macros due to upstream dependencies change: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: app.views.ClientView, app.views.ReporteView, app.views.RegistroView, app.views.AdminView, app.views.ReporteView.Compra, app.views.FiltroView, app.views.ProductView, app.views.Categoria, app.views.PaginaPrincipal, app.views.PaginaPrincipal.Libro, app.views.EliminarView.LibroCompleto, app.views.AgregarView, app.views.LoginView, app.views.CompraView, app.views.EliminarView, app.Main, app.views.AnadirAdminView[0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
-[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 2[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources to D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.13\scala2-sbt-bridge-2.13.13.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 50136402 for Scala compiler version 2.13.13[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-Xplugin:C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.13\1.15.0\scalajs-compiler_2.13.13-1.15.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.13\scala-library-2.13.13.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-library_2.13\1.15.0\scalajs-library_2.13-1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-scalalib_2.13\2.13.13%2B1.15.0\scalajs-scalalib_2.13-2.13.13%2B1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\laminar_sjs1_2.13\16.0.0\laminar_sjs1_2.13-16.0.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-javalib\1.15.0\scalajs-javalib-1.15.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\airstream_sjs1_2.13\16.0.0\airstream_sjs1_2.13-16.0.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\raquo\ew_sjs1_2.13\0.1.2\ew_sjs1_2.13-0.1.2.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-dom_sjs1_2.13\2.6.0\scalajs-dom_sjs1_2.13-2.6.0.jar;C:\Users\crime\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\app\tulz\tuplez-full-light_sjs1_2.13\0.4.0\tuplez-full-light_sjs1_2.13-0.4.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 7.6569392 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

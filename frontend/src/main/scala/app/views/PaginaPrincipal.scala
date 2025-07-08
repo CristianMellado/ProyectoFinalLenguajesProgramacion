@@ -88,13 +88,11 @@ object PaginaPrincipal {
 
       div(
         styleAttr := "background: linear-gradient(90deg, #e3ffe8 0%, #f9f9f9 100%); padding: 30px 0; text-align: center; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);",
-        h1("Bienvenido a BerlyStore!", styleAttr := "font-size: 2.5rem; color: #2d3436; margin-bottom: 10px; font-weight: bold;"),
+        h1("Bienvenido a LibroStore!", styleAttr := "font-size: 2.5rem; color: #2d3436; margin-bottom: 10px; font-weight: bold;"),
         p("Explora nuestra colección de libros y encuentra tu próxima lectura favorita.", styleAttr := "font-size: 1.2rem; color: #636e72; margin-bottom: 0;"),
         div(
-          styleAttr := "display: flex; justify-content: center; gap: 20px; margin-top: 18px;",
-          button("Ver todos", styleAttr := "background: #0984e3; color: white; border: none; border-radius: 6px; padding: 10px 22px; font-size: 1rem; cursor: pointer; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.08);"),
-          button("Ofertas", styleAttr := "background: #00b894; color: white; border: none; border-radius: 6px; padding: 10px 22px; font-size: 1rem; cursor: pointer; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.08);"),
-          button("Nuevos", styleAttr := "background: #fdcb6e; color: #2d3436; border: none; border-radius: 6px; padding: 10px 22px; font-size: 1rem; cursor: pointer; font-weight: 500; box-shadow: 0 1px 4px rgba(0,0,0,0.08);")
+          styleAttr := "display: flex; justify-content: center; gap: 20px; margin-top: 18px;"
+  
         )
       ),
 
