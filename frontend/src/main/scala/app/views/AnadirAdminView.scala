@@ -28,7 +28,7 @@ object AnadirAdminView {
 
       Ajax
         .post(
-          url = "https://99z5gqlq-8081.brs.devtunnels.ms/admin/registraradmin",
+          url = "https://99z5gqlq-8081.brs.devtunnels.ms/admin/registraradmin", // cambia por la ruta real de tu backend
           data = JSON.stringify(data),
           headers = Map("Content-Type" -> "application/json")
         )

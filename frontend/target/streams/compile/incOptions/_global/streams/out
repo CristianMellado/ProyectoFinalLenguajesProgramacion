@@ -1,20 +1,14 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/jrgdngc/IdeaProjects/FINAL/frontend/target/scala-2.13/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$$anonfun$login$1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$$anonfun$apply$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$$anonfun$login$1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$$anonfun$apply$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$$anonfun$login$1$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	LoginView$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	AdminView.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: D:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ClientView$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/jrgdngc/IdeaProjects/FINAL/frontend/target/scala-2.13/classes.bak[0m

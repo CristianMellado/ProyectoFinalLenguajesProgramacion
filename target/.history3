@@ -5,3 +5,7 @@
 1750139750594:frontend
 1750139783353:frontend/fastLinkJS
 1750174330859:sbt frontend/fastLinkJS
+1751946382330:sbt fastOptj
+1751946869324:sbt fastOptJS
+1751946880779:cd frontend
+1751946887408:ls

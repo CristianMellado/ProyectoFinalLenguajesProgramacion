@@ -15,6 +15,7 @@ object AgregarView {
     currentView: Var[HtmlElement],
     librosVar: Var[List[PaginaPrincipal.Libro]]
   ): HtmlElement = {
+
     
     val nombreVar = Var("")
     val precioVar = Var("")
@@ -26,7 +27,7 @@ object AgregarView {
     val pdfFileVar = Var(Option.empty[dom.File])
     val imagenFileVar = Var(Option.empty[dom.File])
 
-    // Obtener categorias
+    // 🔹 Obtener categorías
     Ajax.get("https://99z5gqlq-8081.brs.devtunnels.ms/categoria/obtener_categoria")
         .map { xhr =>
             if (xhr.status == 200) {

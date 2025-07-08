@@ -9,12 +9,12 @@ object Main {
     // 1. Variable de libros
     val librosVar = Var(
       List(
-        PaginaPrincipal.Libro("Aprende Scala", "$20", "assets/libro1.jpg"),
-        PaginaPrincipal.Libro("El Principito", "$25", "assets/libro2.jpg"),
-        PaginaPrincipal.Libro("100 años de soledad", "$30", "assets/100.jpg"),
-        PaginaPrincipal.Libro("Crónica de una muerte", "$22", "assets/libro3.jpg"),
-        PaginaPrincipal.Libro("Cien Ciencias", "$28", "assets/libro4.jpg"),
-        PaginaPrincipal.Libro("Magia y Realismo", "$35", "assets/libro5.jpg")
+        PaginaPrincipal.Libro(1, "Aprende Scala", 20.0, "1", "Programación", "libro1.pdf", "assets/libro1.jpg"),
+        PaginaPrincipal.Libro(2, "El Principito", 25.0, "2", "Literatura", "libro2.pdf", "assets/libro2.jpg"),
+        PaginaPrincipal.Libro(3, "100 años de soledad", 30.0, "2", "Literatura", "100.pdf", "assets/100.jpg"),
+        PaginaPrincipal.Libro(4, "Crónica de una muerte", 22.0, "2", "Literatura", "libro3.pdf", "assets/libro3.jpg"),
+        PaginaPrincipal.Libro(5, "Cien Ciencias", 28.0, "3", "Ciencia", "libro4.pdf", "assets/libro4.jpg"),
+        PaginaPrincipal.Libro(6, "Magia y Realismo", 35.0, "2", "Literatura", "libro5.pdf", "assets/libro5.jpg")
       )
     )
 
