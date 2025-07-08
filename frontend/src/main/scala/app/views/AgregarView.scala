@@ -28,7 +28,7 @@ object AgregarView {
     val imagenFileVar = Var(Option.empty[dom.File])
 
     // 🔹 Obtener categorías
-    Ajax.get("https://99z5gqlq-8081.brs.devtunnels.ms/obtener_categoria")
+    Ajax.get("https://99z5gqlq-8081.brs.devtunnels.ms/categoria/obtener_categoria")
         .map { xhr =>
             if (xhr.status == 200) {
             try {
@@ -38,7 +38,7 @@ object AgregarView {
 
                 val categorias = response.map { cat =>
                 Categoria(
-                    id = cat.id.asInstanceOf[Int], // o cat.id_categoria si así es tu JSON
+                    id = cat.id_categoria.toString.toInt, //id = cat.id.asInstanceOf[Int], // o cat.id_categoria si así es tu JSON
                     nombre = cat.nombre.toString
                 )
                 }.toList
@@ -73,11 +73,11 @@ object AgregarView {
       if (pdfFile != null && imagenFile != null && nombre.nonEmpty && precio.nonEmpty && idCategoria.nonEmpty) {
         val pdfForm = new dom.FormData()
         pdfForm.append("file", pdfFile)
-        Ajax.post(s"https://99z5gqlq-8081.brs.devtunnels.ms/uploadpdf/${pdfFile.name}", pdfForm)
+        Ajax.post(s"https://99z5gqlq-8081.brs.devtunnels.ms/documento/uploadpdf/${pdfFile.name}", pdfForm)
           .flatMap { _ =>
             val imgForm = new dom.FormData()
             imgForm.append("file", imagenFile)
-            Ajax.post(s"https://99z5gqlq-8081.brs.devtunnels.ms/upload/${imagenFile.name}", imgForm)
+            Ajax.post(s"https://99z5gqlq-8081.brs.devtunnels.ms/imagen/upload/${imagenFile.name}", imgForm)
           }
           .flatMap { _ =>
             val data = js.Dynamic.literal(
@@ -88,7 +88,7 @@ object AgregarView {
               nombreimagen = imagenFile.name
             )
             Ajax.post(
-              url = "https://99z5gqlq-8081.brs.devtunnels.ms/insertar_libro",
+              url = "https://99z5gqlq-8081.brs.devtunnels.ms/libro/insertar_libro",
               data = JSON.stringify(data),
               headers = Map("Content-Type" -> "application/json")
             )

@@ -91,7 +91,7 @@ object AdminView {
             currentView.set(AnadirAdminView(currentView, librosVar))
           }
         )
-        /*
+        /* ,
         button(
           "Volver",
           styleAttr := """
@@ -103,7 +103,8 @@ object AdminView {
             cursor: pointer;
           """,
         onClick --> { _ => currentView.set(AdminView(currentView, librosVar)) }
-        )*/
+        )
+        */
       )
     )
   }

@@ -1,3 +1,14 @@
+error id: file:///D:/Documentos/UCSP/2025-1/LP/Ecommerce_Scala/frontend/src/main/scala/app/views/AnadirAdminView.scala:`<none>`.
+file:///D:/Documentos/UCSP/2025-1/LP/Ecommerce_Scala/frontend/src/main/scala/app/views/AnadirAdminView.scala
+empty definition using pc, found symbol in pc: `<none>`.
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 995
+uri: file:///D:/Documentos/UCSP/2025-1/LP/Ecommerce_Scala/frontend/src/main/scala/app/views/AnadirAdminView.scala
+text:
+```scala
 package app.views
 
 import com.raquo.laminar.api.L._
@@ -30,7 +41,7 @@ object AnadirAdminView {
         .post(
           url = "https://99z5gqlq-8081.brs.devtunnels.ms/admin/registraradmin", // cambia por la ruta real de tu backend
           data = JSON.stringify(data),
-          headers = Map("Content-Type" -> "application/json")
+          headers = Map("Content-Type" -> "application@@/json")
         )
         .map { xhr =>
           if (xhr.status == 200) {
@@ -126,3 +137,10 @@ object AnadirAdminView {
     )
   }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: `<none>`.
