@@ -1,11 +1,3 @@
 [0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
-[0m[[0m[0mdebug[0m] [0m[0mUpdating frontend...[0m
-[0m[[0m[0minfo[0m] [0m[0mUpdating frontend_sjs1_2.13[0m
-[0m[[0m[0minfo[0m] [0m[0mResolved frontend_sjs1_2.13 dependencies[0m
-[0m[[0m[0minfo[0m] [0m[0mUpdating frontend_sjs1_2.13[0m
-[0m[[0m[0minfo[0m] [0m[0mResolved frontend_sjs1_2.13 dependencies[0m
-[0m[[0m[0minfo[0m] [0m[0mUpdating frontend_sjs1_2.13[0m
-[0m[[0m[0minfo[0m] [0m[0mResolved frontend_sjs1_2.13 dependencies[0m
-[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of frontend_sjs1_2.13[0m
-[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of frontend_sjs1_2.13[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone updating frontend[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating [0m

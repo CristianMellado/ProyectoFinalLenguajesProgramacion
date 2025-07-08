@@ -1,7 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\src\main\scala\app\views\LoginView.scala:44:24: ')' expected but string literal found.[0m
-[0m[[0m[31merror[0m] [0m[0m          styleAttr := """[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\src\main\scala\app\views\LoginView.scala:94:3: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Documentos\UCSP\2025-1\LP\Ecommerce_Scala\frontend\src\main\scala\app\views\AdminView.scala:94:9: value button is not a member of com.raquo.laminar.nodes.ReactiveHtmlElement[org.scalajs.dom.HTMLButtonElement][0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value button`?[0m
+[0m[[0m[31merror[0m] [0m[0m        button([0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

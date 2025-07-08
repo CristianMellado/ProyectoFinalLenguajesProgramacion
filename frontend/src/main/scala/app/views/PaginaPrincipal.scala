@@ -1,16 +1,14 @@
 package app.views
-
 import com.raquo.laminar.api.L._
-
 object PaginaPrincipal {
 
   case class Libro(titulo: String, precio: String, imagen: String)
 
-  // Lista base original
+  //lista base original
   val librosIniciales: List[Libro] = List(
-    Libro("Aprende Scala", "$20", "assets/libro1.png"),
-    Libro("El Principito", "$25", "assets/libro2.png"),
-    Libro("100 años de soledad", "$30", "assets/100.jpg"),
+    Libro("Aprende Scalaa", "$20", "/assets/aprende_scala.jpg"),
+    Libro("El Principito", "$25", "/assets/el_principito.jpg"),
+    Libro("100 años de soledad", "$30", "/assets/100.jpg"),
     Libro("Cienciología", "$28", "assets/libro4.png"),
     Libro("Física Cuántica", "$35", "assets/libro5.png"),
     Libro("Historia Universal", "$22", "assets/libro6.png")

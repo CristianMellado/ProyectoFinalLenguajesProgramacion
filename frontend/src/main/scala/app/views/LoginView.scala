@@ -2,6 +2,11 @@ package app.views
 
 import com.raquo.laminar.api.L._
 import app.views.PaginaPrincipal.Libro
+import org.scalajs.dom
+import org.scalajs.dom.ext.Ajax
+import scala.scalajs.js
+import scala.scalajs.js.JSON
+import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 
 object LoginView {
   def apply(
@@ -12,9 +17,55 @@ object LoginView {
     val usuarioVar = Var("")
     val contrasenaVar = Var("")
 
-    div(
+    // Función para hacer login
+    def login(): Unit = {
+      val correo = usuarioVar.now()
+      val contrasena = contrasenaVar.now()
 
-      // Este div centrará el contenido
+      if (correo == "admin" && contrasena == "123") {
+        dom.window.localStorage.setItem("rol", "admin")
+        dom.window.localStorage.setItem("id_persona", "999")
+        dom.window.localStorage.setItem("email", correo)
+        currentView.set(AdminView(currentView, librosVar))
+      } else {
+        // Solo si NO es admin, intentamos simular el login al backend
+        val data = js.Dynamic.literal(
+          correo = correo,
+          contrasena = contrasena
+        )
+        Ajax
+          .post(
+            url = "/ruta/login", // cuando tengas backend, ajusta la ruta
+            data = JSON.stringify(data),
+            headers = Map("Content-Type" -> "application/json")
+          )
+          .map { xhr =>
+            if (xhr.status == 200) {
+              val response = JSON.parse(xhr.responseText)
+              val rol = response.rol.toString
+              val idPersona = response.id_persona.toString
+              val email = response.email.toString
+
+              dom.window.localStorage.setItem("rol", rol)
+              dom.window.localStorage.setItem("id_persona", idPersona)
+              dom.window.localStorage.setItem("email", email)
+
+              if (rol == "admin") {
+                currentView.set(AdminView(currentView, librosVar))
+              } else {
+                currentView.set(PaginaPrincipal(currentView, librosVar))
+              }
+            } else {
+              dom.window.alert("Error en login: " + xhr.status)
+            }
+          }
+          .recover { case ex =>
+            dom.window.alert("Error conectando con el servidor: " + ex.getMessage)
+          }
+      }
+    }
+
+    div(
       styleAttr := """
         display: flex;
         justify-content: center;
@@ -23,7 +74,6 @@ object LoginView {
         background-color: #f9f9f9;
       """,
 
-      // Este es el formulario en sí
       div(
         styleAttr := """
           padding: 30px;
@@ -39,9 +89,9 @@ object LoginView {
         h2("Iniciar Sesión", styleAttr := "text-align: center;"),
 
         input(
-          placeholder := "Usuario",
+          placeholder := "Correo",
           onInput.mapToValue --> usuarioVar.writer,
-          styleAttr := 
+          styleAttr :=
             """width: 250px;
               |padding: 10px;
               |font-size: 16px;
@@ -55,7 +105,7 @@ object LoginView {
           typ := "password",
           placeholder := "Contraseña",
           onInput.mapToValue --> contrasenaVar.writer,
-          styleAttr := 
+          styleAttr :=
             """width: 250px;
               |padding: 10px;
               |font-size: 16px;
@@ -68,10 +118,7 @@ object LoginView {
         button(
           "Iniciar Sesión",
           styleAttr := s"background-color: ${Estilos.colorPrimario}; color: white; border: none; padding: 10px; border-radius: 6px;",
-          onClick --> { _ =>
-            println(s"Intentando iniciar sesión con: ${usuarioVar.now()} - ${contrasenaVar.now()}")
-            currentView.set(PaginaPrincipal(currentView, librosVar))
-          }
+          onClick --> { _ => login() }
         ),
 
         button(
@@ -84,12 +131,12 @@ object LoginView {
 
         button(
           "Volver a inicio",
-          styleAttr := "background-color: #95a5a6;; color: white; border: none; padding: 10px; border-radius: 6px;",
+          styleAttr := "background-color: #95a5a6; color: white; border: none; padding: 10px; border-radius: 6px;",
           onClick --> { _ =>
             currentView.set(PaginaPrincipal(currentView, librosVar))
           }
         )
-      )  
+      )
     )
   }
 }
